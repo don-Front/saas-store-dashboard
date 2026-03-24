@@ -1,0 +1,198 @@
+/**
+ * Демо-клиенты для страницы «Клиенты» (без API).
+ */
+
+export type DemoCustomer = {
+  id: string
+  name: string
+  email: string
+  phone: string
+  /** ISO 8601 — дата регистрации. */
+  registeredAt: string
+  ordersCount: number
+  /** Сумма всех заказов клиента, ₽. */
+  totalSpentRub: number
+}
+
+export const initialDemoCustomers: DemoCustomer[] = [
+  {
+    id: 'CUS-1001',
+    name: 'Анна Смирнова',
+    email: 'anna.s@mail.ru',
+    phone: '+7 (916) 234-56-78',
+    registeredAt: '2024-06-12T12:00:00.000Z',
+    ordersCount: 12,
+    totalSpentRub: 186_400,
+  },
+  {
+    id: 'CUS-1002',
+    name: 'ИП «Вектор»',
+    email: 'zakaz@vector-spb.ru',
+    phone: '+7 (812) 555-01-02',
+    registeredAt: '2024-05-20T09:30:00.000Z',
+    ordersCount: 28,
+    totalSpentRub: 1_240_000,
+  },
+  {
+    id: 'CUS-1003',
+    name: 'Михаил Козлов',
+    email: 'kozlov.m@gmail.com',
+    phone: '+7 (903) 111-22-33',
+    registeredAt: '2025-01-08T15:00:00.000Z',
+    ordersCount: 3,
+    totalSpentRub: 9_800,
+  },
+  {
+    id: 'CUS-1004',
+    name: 'ООО «Север»',
+    email: 'snab@sever-opt.ru',
+    phone: '+7 (495) 777-88-99',
+    registeredAt: '2023-11-03T10:00:00.000Z',
+    ordersCount: 45,
+    totalSpentRub: 3_890_500,
+  },
+  {
+    id: 'CUS-1005',
+    name: 'Елена Волкова',
+    email: 'elena.volkova@yandex.ru',
+    phone: '+7 (926) 444-55-66',
+    registeredAt: '2024-09-01T18:20:00.000Z',
+    ordersCount: 7,
+    totalSpentRub: 42_300,
+  },
+  {
+    id: 'CUS-1006',
+    name: 'Дмитрий Орлов',
+    email: 'd.orlov@mail.ru',
+    phone: '+7 (915) 888-90-12',
+    registeredAt: '2025-02-14T11:45:00.000Z',
+    ordersCount: 1,
+    totalSpentRub: 21_300,
+  },
+  {
+    id: 'CUS-1007',
+    name: 'ООО «ТехноЛайн»',
+    email: 'order@technoline.ru',
+    phone: '+7 (499) 123-45-67',
+    registeredAt: '2023-08-22T08:00:00.000Z',
+    ordersCount: 62,
+    totalSpentRub: 5_600_000,
+  },
+  {
+    id: 'CUS-1008',
+    name: 'Светлана Никифорова',
+    email: 'svetlana.n@inbox.ru',
+    phone: '+7 (977) 333-44-55',
+    registeredAt: '2025-03-01T14:10:00.000Z',
+    ordersCount: 0,
+    totalSpentRub: 0,
+  },
+  {
+    id: 'CUS-1009',
+    name: 'ИП Зайцев',
+    email: 'zaycev.ip@mail.ru',
+    phone: '+7 (908) 222-33-44',
+    registeredAt: '2024-04-17T16:00:00.000Z',
+    ordersCount: 19,
+    totalSpentRub: 312_000,
+  },
+  {
+    id: 'CUS-1010',
+    name: 'Кафе «Уют»',
+    email: 'zakup@uyut-cafe.ru',
+    phone: '+7 (843) 200-11-22',
+    registeredAt: '2024-07-30T12:30:00.000Z',
+    ordersCount: 8,
+    totalSpentRub: 156_700,
+  },
+  {
+    id: 'CUS-1011',
+    name: 'Артём Панов',
+    email: 'artem.panov@gmail.com',
+    phone: '+7 (919) 555-66-77',
+    registeredAt: '2024-12-05T19:00:00.000Z',
+    ordersCount: 2,
+    totalSpentRub: 67_400,
+  },
+  {
+    id: 'CUS-1012',
+    name: 'ООО «Логистик»',
+    email: 'office@logistik-group.ru',
+    phone: '+7 (812) 900-12-34',
+    registeredAt: '2023-10-10T09:15:00.000Z',
+    ordersCount: 33,
+    totalSpentRub: 2_100_000,
+  },
+  {
+    id: 'CUS-1013',
+    name: 'Марина Белова',
+    email: 'marina.belova@yandex.ru',
+    phone: '+7 (905) 777-88-99',
+    registeredAt: '2025-02-28T10:00:00.000Z',
+    ordersCount: 4,
+    totalSpentRub: 18_200,
+  },
+  {
+    id: 'CUS-1014',
+    name: 'Студия «Пиксель»',
+    email: 'hello@pixel-studio.ru',
+    phone: '+7 (495) 600-70-80',
+    registeredAt: '2024-02-19T13:40:00.000Z',
+    ordersCount: 15,
+    totalSpentRub: 890_000,
+  },
+  {
+    id: 'CUS-1015',
+    name: 'Иван Чернов',
+    email: 'ivan.chernov@mail.ru',
+    phone: '+7 (916) 100-20-30',
+    registeredAt: '2024-11-11T11:11:00.000Z',
+    ordersCount: 6,
+    totalSpentRub: 94_500,
+  },
+  {
+    id: 'CUS-1016',
+    name: 'Ольга Рыжова',
+    email: 'olga.r@mail.ru',
+    phone: '+7 (927) 654-32-10',
+    registeredAt: '2025-01-22T08:50:00.000Z',
+    ordersCount: 0,
+    totalSpentRub: 0,
+  },
+  {
+    id: 'CUS-1017',
+    name: 'Фитнес-клуб «Спринт»',
+    email: 'shop@sprint-fitness.ru',
+    phone: '+7 (383) 333-00-11',
+    registeredAt: '2023-12-01T07:00:00.000Z',
+    ordersCount: 24,
+    totalSpentRub: 445_800,
+  },
+  {
+    id: 'CUS-1018',
+    name: 'Павел Соколов',
+    email: 'p.sokolov@gmail.com',
+    phone: '+7 (902) 987-65-43',
+    registeredAt: '2024-08-08T20:15:00.000Z',
+    ordersCount: 9,
+    totalSpentRub: 128_900,
+  },
+  {
+    id: 'CUS-1019',
+    name: 'Аптека «Здоровье»',
+    email: 'opt@zdorovie-apteka.ru',
+    phone: '+7 (351) 240-50-60',
+    registeredAt: '2022-05-15T09:00:00.000Z',
+    ordersCount: 110,
+    totalSpentRub: 8_200_000,
+  },
+  {
+    id: 'CUS-1020',
+    name: 'Наталья Ким',
+    email: 'natalia.kim@yandex.ru',
+    phone: '+7 (918) 321-09-87',
+    registeredAt: '2025-03-10T12:00:00.000Z',
+    ordersCount: 1,
+    totalSpentRub: 3_450,
+  },
+]
